@@ -16,9 +16,10 @@ import com.example.wk4_aaad.R.layout.activity_main
 import com.example.wk4_aaad.ui.theme.Wk4_AAADTheme
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
-        // The layout will handle displaying the image.
+
     }
 }

@@ -9,10 +9,10 @@
 
     <!-- Username or Email Field -->
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username or Email"
+        android:hint="Email"
         android:layout_marginBottom="16dp"
         tools:ignore="Autofill,HardcodedText" />
 
@@ -32,4 +32,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return"/>
 </LinearLayout>
