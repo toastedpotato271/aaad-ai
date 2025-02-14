@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,11 +18,11 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText
     private lateinit var etPassword: EditText
     private lateinit var btnLogin: Button
-    private lateinit var btnBack: Button
+    private lateinit var btnBack: ImageView
 
     // Hardcoded username & password (for testing)
-    private val validEmail = "user@androidkotlin.com"
-    private val validPassword = "password12345"
+    private val validEmail = "user@aaad.com"
+    private val validPassword = "12345"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import android.content.Intent
+import android.widget.TextView
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -22,7 +23,7 @@ class WelcomeActivity : AppCompatActivity() {
         // Initialize Buttons
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnRegister = findViewById<Button>(R.id.btnSignup)
-        val btnAccountRequest = findViewById<Button>(R.id.btnAccountRetrieval)
+        val btnAccountRequest = findViewById<TextView>(R.id.tvRetrieveAccount)
 
         // Button Click Listeners
         btnLogin.setOnClickListener {

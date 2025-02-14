@@ -1,44 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    style="@style/CenteredLayout">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="App Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abasiclogo" />
 
     <!-- App Title -->
     <TextView
         android:id="@+id/tvTitle"
+        style="@style/TitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A-Basic App"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:fontFamily="@font/poppins_bold"
+        android:text="A-Basic"
+        android:textAlignment="center"
+        android:textSize="35sp" />
 
-    <!-- Login Button -->
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+    <!-- Horizontal Layout for Login & Sign Up -->
+    <LinearLayout
+        android:layout_width="321dp"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <!-- Sign Up Button -->
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:layout_marginBottom="16dp"/>
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/WelcomeBtn"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Login"
+            app:cornerRadius="100dp" />
 
-    <!-- Account Retrieval Button -->
-    <Button
-        android:id="@+id/btnAccountRetrieval"
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            style="@style/WelcomeBtn"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            app:cornerRadius="100dp" />
+    </LinearLayout>
+
+    <!-- Retrieve Account Clickable Text -->
+    <TextView
+        android:id="@+id/tvRetrieveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Retrieve Account"
-        />
+        android:text="Retrieve Account?"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
